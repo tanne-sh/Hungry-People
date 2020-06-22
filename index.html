@@ -7,6 +7,7 @@
   <title>Hungry People</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -104,6 +105,38 @@
 </html>
 
 <!-- finish section about -->
+
+<!-- start section book -->
+<section class="book">
+  <div class="content section-content">
+    <div class="section-content-information">
+      <h2 class="section-title">book a table</h2>
+      <form class="book-order">
+        <input type="text" name="name" placeholder="Name" class="input-text">
+        <input type="email" name="email" placeholder="Email" class="input-text">
+        <input type="phone" name="phone" placeholder="Phone" class="input-text input-phone">
+        <select name="people" class="select">
+          <option value="People">People</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <input type="text" name="name" placeholder="Name" class="input-text">
+        <input type="text" name="name" placeholder="Name" class="input-text">
+      </form>
+    </div>
+    <div class="section-content-media">
+      <div class="section-content-media-image">
+        <img src="./images/book-img.jpg" class="section-content-media-image__img" alt="About">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- finish section book -->
+<script src="https://unpkg.com/imask"></script>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 <script src="main.js"></script>
 </body>
 
