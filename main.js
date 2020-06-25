@@ -9,3 +9,19 @@ elementsPhone.forEach((element) => {
 const choices = new Choices(".select", {
   searchEnabled: false,
 });
+
+flatpickr("#date", {
+  dateFormat: "m/d",
+});
+
+flatpickr("#time", {
+  enableTime: true,
+  noCalendar: true,
+  dateFormat: "H:i",
+  time_24hr: true,
+});
+
+var mySwiper = new Swiper(".swiper-container", {
+  slidesPerView: 1,
+  autoHeight: true,
+});
