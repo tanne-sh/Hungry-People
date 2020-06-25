@@ -260,7 +260,8 @@ img {
   text-transform: uppercase;
 }
 
-.section-title:before {
+.section-title:before,
+.menu-tabs-name.active:before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -346,4 +347,120 @@ img {
   padding: 100px 0;
   background: url(../images/products-bg.jpg);
   background-size: cover;
+}
+
+.menu {
+  padding: 100px 0;
+}
+
+.menu-text_bold {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 auto 50px;
+  max-width: 565px;
+  text-align: center;
+}
+
+.tab-name {
+  list-style: none;
+}
+
+.menu-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 50px 0;
+}
+
+.menu-tabs-name {
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-left: 1px solid rgba(51, 51, 51, 0.2);
+  position: relative;
+}
+
+.menu-tabs-name:first-child {
+  border: none;
+}
+
+.menu-content-tab {
+  display: none;
+}
+
+.menu-content-tab.active {
+  display: block;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 87px;
+}
+
+.menu-list-element {
+  display: flex;
+  justify-content: space-between;
+  min-height: 55px;
+  margin-bottom: 10px;
+}
+
+.menu-list-element__name {
+  font-family: Banny, Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.menu-list-element__description {
+  font-size: 12px;
+  line-height: 18px;
+  display: block;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.menu-list-element-price {
+  white-space: nowrap;
+  font-family: Banny, Arial, sans-serif;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.events {
+  background: url(../images/events-bg.png);
+  padding: 100px 0;
+}
+
+.event-element__name {
+  position: absolute;
+  height: 80px;
+  background: #000000;
+  font-size: 24px;
+  color: #fff;
+  font-family: Banny, Arial, sans-serif;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.event-element__name.top {
+  top: 0;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.event-element__name.bottom {
+  bottom: 0;
+  border-radius: 5px 5px 0px 0px;
 }
