@@ -464,3 +464,18 @@ img {
   bottom: 0;
   border-radius: 5px 5px 0px 0px;
 }
+
+.gallery {
+  display: flex;
+}
+
+.gallery-image {
+  width: 25%;
+  background-size: cover;
+}
+
+.gallery-image:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}

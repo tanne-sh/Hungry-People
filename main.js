@@ -52,3 +52,9 @@ tabsName.forEach((tab) => {
     );
   });
 });
+
+const lightbox = GLightbox({
+  selector: ".gallery-image",
+  touchNavigation: true,
+  loop: true,
+});
