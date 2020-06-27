@@ -670,10 +670,14 @@ img {
     display: flex;
     justify-content: space-between;
   }
+
+  .header-middle__title:before {
+    bottom: -10px;
+  }
   .section-content {
     grid-template-columns: 1fr;
   }
-  .section-content-media-image {
+  .section-content-media {
     margin-top: 20px;
     text-align: center;
   }

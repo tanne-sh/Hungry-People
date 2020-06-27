@@ -58,3 +58,15 @@ const lightbox = GLightbox({
   touchNavigation: true,
   loop: true,
 });
+
+const mobileMenuButton = document.querySelector(".header-navigation-menu");
+const mobileMenuClose = document.querySelector(".header-navigation-close");
+const mobileMenu = document.querySelector(".header-navigation");
+mobileMenuButton.addEventListener("click", function () {
+  mobileMenu.classList.add("active");
+});
+mobileMenuClose.addEventListener("click", function () {
+  mobileMenu.classList.remove("active");
+});
+
+const scroll = new SmoothScroll('.header-navigation__link[href*="#"]');
